@@ -1,0 +1,1 @@
+getElementsByClassName().focus(value="")

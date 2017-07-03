@@ -1,8 +1,3 @@
-* {
-	padding: 0;
-	margin: 0;
-}
-
 body {
 	background: #DDDDDD;
 	font-family: helvetica;
@@ -20,6 +15,10 @@ h1 {
 }
 
 h2 {
+	
+}
+
+.box {
 	
 }
 
@@ -75,34 +74,49 @@ header {
 #why_this_is ul {
 	list-style: circle;
 	max-width: 100%;
-/* 	border: 1px dashed #ff4c4c; */
-	padding:1px;
 	font-size: 1.2em;
-	font-family: helvetica;
 }
 
-#why_this_is li{
-	margin: 1em
+#why_this_is li {
+	margin: 1em;
+	background: rgba(255, 255, 255, 0);
+	transition: background 5s;
+	-webkit-transition: background 5s;
 }
 
-#why_this_is img, a {
+#why_this_is li:hover {
+	background: -webkit-radial-gradient(rgba(255,255,255,0.6) 0%, rgba(0,0,0,0) 80%);
+	}
+
+#why_this_is img {
 	max-width: 100%;
 	border-radius: 13px;
 }
 
 #why_this_is div {
 	width: 40%;
-	float: left;
-	margin: 30px 0 0 6.5%;
-	max-width: 450px;
+	position: relative;
+	display: inline-block;
+	min-width: 322px;
 }
+
+#list {
+	left: 4%;
+}
+
+#test {
+	float: right;
+	right: 4%
+}
+
+
 
 /*************************
 	WHERE TO FIND THE TUTORIAL
 **************************/
 
 #where_to_find {
-	background: url(img/resources.jpg) center 30%;
+	background-image: url(img/resources.jpg);
 	background-size: 100%;
 }
 
